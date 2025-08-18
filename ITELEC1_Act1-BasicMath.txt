@@ -1,20 +1,20 @@
 public class BasicMath{
 	public static void main(String[] args) {
-		int x = 10;
-		int y = 29;
+		float num1 = 29;
+		float num2 = 10;
 		char op = '*';
 
 		if (op == '+') {
-			System.out.println("Sum: " + (x + y));
+			System.out.println(num1 + " + " + num2 + " = " + (num1 += num2));
 		} else if (op == '-') {
-			System.out.println("Difference: " + (x - y));
+			System.out.println(num1 + " - " + num2 + " = " + (num1 -= num2));
 		} else if (op == '*') {
-			System.out.println("Product: " + (x * y));
+			System.out.println(num1 + " * " + num2 + " = " + (num1 *= num2));
 		} else if (op == '/') {
-			if (y != 0) {
-				System.out.println("Quotient: " + (x / y));
+			if (num1 != 0) {
+			System.out.println(num1 + " / " + num2 + " = " + (num1 /= num2));
 			} else {
-				System.out.println("Error! The answer will be unidentified.");
+				System.out.println("Error! The're no answer for this equation.");
 			}
           } else {
 			System.out.println("Invalid operation!");
